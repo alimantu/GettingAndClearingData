@@ -16,5 +16,12 @@ data = xData[,featIndex]
 names(data) = features[featIndex, 2]
 
 activNames = read.table("./GaCD/Dataset/activity_labels.txt")
-activ = activNames[yData[featIndex, 1],2]
-names(activ) = "Activity"
+yData[,1]  = activNames[yData[, 1], 2]
+names(yData) = c("Activity")
+
+TData = cbind(sub, yData, data)
+
+meltData = melt(TData, id = c("Subject", "Activity"), measure.vars = features[featIndex, 2])
+TMData = dcast(meltData, Activity + Subject ~ variable, mean)
+write.table(TData, "./GaCD/TidyData.txt")
+write.table(TMData, "./GaCD/MeltedTidyData.txt")
