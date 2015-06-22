@@ -13,4 +13,4 @@ The `run_analysis.R` file contains all the used scrypts.
 
 For test it you should use [this datasets](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).(Warning: after unziping rename the folder with datasets to the `Dataset` and move it to your R working directory!)
 
-The discription of the colnames of the resulted file you can find in `codebook.md`.
+The discription of the colnames of the resulted file you can find in `codeBook.md`.
