@@ -9,8 +9,8 @@
 
 ###About this work
 
-The `run_analysis.R` file contains all the used scrypts.
+The `run_analysis.R` file contains all the used scrypts. Run it to collect tidy data in file `TidyData.txt` or average tidy data `MeltedTidyData.txt` in your current R working directory.
 
 For test it you should use [this datasets](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip).(Warning: after unziping rename the folder with datasets to the `Dataset` and move it to your R working directory!)
 
-The discription of the colnames of the resulted file you can find in `codeBook.md`.
+The discription of the colnames if the tidy datasets and each of the scrypt variables you can find in `codeBook.md`.
