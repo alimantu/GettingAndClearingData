@@ -1,6 +1,6 @@
 The names of the columns:
 ---------------------------
-**Activity** is the name of the activity at the time. 
+**Activity** is the name of the activity. 
 
 **Subject** is the ID of the viewed subject. 
 
