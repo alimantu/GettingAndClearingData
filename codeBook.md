@@ -1,7 +1,9 @@
 The names of the variables:
 ---------------------------
-Activity is the name of the activity at the time
-Subject is the ID of the viewed subject
+Activity is the name of the activity at the time. 
+
+Subject is the ID of the viewed subject. 
+
 See [raw data description](http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones) for others.
 
 
