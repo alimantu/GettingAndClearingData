@@ -51,3 +51,19 @@ dimnames(TMData)[[2]]
 The scrypt variables:
 ---------------------
 **trainY, trainX, testX, testY, trainSub, testSub** - temp files, used for store the train/test parts of the X_*.txt, y_*.txt and subject_*.txt datasets.
+
+**xData** - the dataset contains merged `x_*.txt` files datasets.
+
+**yData** - the set contains the type of the activity.
+
+**sub** - the set contains the ID of the subject.
+
+**featIndex** - the set contains the numbers of the mean and standard deviation features.
+
+**activNames** - contains the names of the activitys.
+
+**TData** - dataset for the 4 problem of the course work.
+
+**meltData** - the melt dataset for the each subject and activity.
+
+**TMData** - dataset for the 5 problem of the course work.
