@@ -1,3 +1,5 @@
+library(reshape2)
+
 #Reading all the used datasets from train and test
 trainY = read.table("./Dataset/train/y_train.txt")
 trainX = read.table("./Dataset/train/X_train.txt")
@@ -16,7 +18,7 @@ sub = rbind(trainSub, testSub)
 names(sub) = c("Subject")
 
 #Finding index of the future using features on the mean and standard deviation
-featIndex = grep("mean\\(\\)|std\\(\\)", features[,2])
+featIndex = grep("mean\\(\\)|std\\(\\)", features[,2], value = FALSE)
 
 #Assign the data with mean and standard deviation to the data variable, setting the colnames
 data = xData[,featIndex]
@@ -32,7 +34,7 @@ names(yData) = c("Activity")
 TData = cbind(sub, yData, data)
 
 #Creating the data set with average of each variable dor each activity and each subject
-meltData = melt(TData, id = c("Subject", "Activity"), measure.vars = features[featIndex, 2])
+meltData = melt(TData, id = c("Subject", "Activity"))
 TMData = dcast(meltData, Activity + Subject ~ variable, mean)
 
 #Writing datasets to the text files
